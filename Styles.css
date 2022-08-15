@@ -1,0 +1,31 @@
+.mat-card {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: #0a66c2
+}
+.mat-card#first-card {
+    padding: 0;
+}
+
+div#profile-background {
+    display: flex;
+    z-index: 1;
+}
+div#profile-bacground img {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -110px;
+    z-index: 1;
+}
+
+div#info-actions { display: flex; }
+
+.Logo { width: 15%; }
+#UBA { width: 20%; }
