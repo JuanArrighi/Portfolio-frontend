@@ -1,0 +1,11 @@
+.row {
+    background-color: #daeaff;
+    padding: 10px;
+}
+.btn{
+    float: right;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,22 @@
+.row {
+    padding: 22px;
+}
+div {
+    background: #daeaff
+}
+
+h1,h4 {
+    display: inline;
+}
+.btn{
+    float: right;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 80px;
+
+    }

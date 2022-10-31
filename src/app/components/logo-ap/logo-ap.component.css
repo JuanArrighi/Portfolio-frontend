@@ -1,0 +1,96 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoAP {
+    width: 150px;
+}
+
+#programa {
+    align-content:left;
+    font-family: Verdana, Geneva, sans-serif;
+font-size: 16px;
+letter-spacing: -0.8px;
+word-spacing: -0.8px;
+color: #FFFFFF;
+font-weight: 700;
+text-decoration: rgb(68, 68, 68);
+font-style: normal;
+padding-left: 20px;
+padding-top: 20px;
+}
+
+.container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+img{
+    width: 30px;
+}
+
+.nav-link{
+    color: #ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    column-gap: 9px;
+}
+.Logbtn{
+    color: #ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    column-gap: 9px;
+}
+
+
+@media (max-width: 575px) {
+    .container {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #logoAP{
+        width: 80%;
+        align-items: center;
+        position: relative;
+        padding-left: 50px;
+    }
+    #programa {
+        width: 80%;
+        padding-left: 50px;
+        font-size: 30px;
+        align-items: center;
+        position: relative;
+    }
+    .container-fluid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-link{
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-toggler-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Logbtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+

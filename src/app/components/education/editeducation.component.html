@@ -1,0 +1,38 @@
+<div class="container" *ngIf="education">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Carrera/Titulo</label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="education.nombreE" required>
+                </div>
+                <div class="form-group">
+                    <label for="institucionE">Nombre de la institucion</label>
+                    <input type="text" class="form-control" id="institucionE" name="institucionE" [(ngModel)]="education.institucionE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion de sus estudios</label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="education.descripcionE" required>
+                </div>
+                <div class="form-group">
+                    <label for="inicioE">Fecha de inicio (mm/yyyy)</label>
+                    <input type="text" class="form-control" id="inicioE" name="inicioE" [(ngModel)]="education.inicioE" required>
+                </div>
+                <div class="form-group">
+                    <label for="finE">fecha de finalización (mm/yyyy)</label>
+                    <input type="text" class="form-control" id="finE" name="finE" [(ngModel)]="education.finE" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Logo de institución</label>
+                    <input type="file" class="form-control" id="logoE" name="img" [(ngModel)]="education.logoE" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+                <div class="imagen">
+                    <img [src]="imageService.url" width="200px">
+                </div>
+                <button class="btn btn-primary">
+                    Editar educación
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

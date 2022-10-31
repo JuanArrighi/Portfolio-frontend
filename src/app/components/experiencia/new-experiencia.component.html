@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Nombre de la empresa</label>
+                    <input type="text" class="form-control" id="empresaE" name="empresaE" [(ngModel)]="empresaE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Nombre del puesto</label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion de la tarea</label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Fecha de inicio (mm/yyyy)</label>
+                    <input type="text" class="form-control" id="inicioE" name="inicioE" [(ngModel)]="inicioE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">fecha de finalización (mm/yyyy)</label>
+                    <input type="text" class="form-control" id="finE" name="finE" [(ngModel)]="finE" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Logo de empresa</label>
+                    <input type="file" class="form-control" id="logoE" name="img" [(ngModel)]="logoE" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+                <div class="imagen">
+                    <img [src]="imageService.url" width="200px">
+                </div>
+
+                <button class="btn btn-primary">
+                    Agregar experiencia
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
